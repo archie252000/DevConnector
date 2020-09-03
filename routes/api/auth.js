@@ -22,7 +22,7 @@ router.get("/", auth, async (req, res) => {
 });
 
 // @route    POST api/auth
-// @desc     Register user
+// @desc     Authenticate user and get token
 // @access   Public
 
 router.post(
@@ -48,6 +48,11 @@ router.post(
           .json({ errors: [{ msg: "Invalid credentials" }] });
       }
 
+
+      const isMatch = await bcrypt.compare(password, user.password);
+      if(!isMatch){
+        return res.status(400).json({errors:[{msg:'Invalid credentials'}]});
+      }
       const payload = {
         user: {
           id: user.id,
