@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { login } from '../../actions/auth';
 // import axios from "axios";
 
- const Login = ({ login, isAuthenticated }) => {
+ const Login = ({  login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
