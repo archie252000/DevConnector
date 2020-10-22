@@ -12,7 +12,7 @@ import Education from './Education';
 const Dashboard = ({ deleteAccount, getCurrentProfile, auth:{ user }, profile: { profile, loading } })  => {
    useEffect(()=> {
     getCurrentProfile();
-   }, []);
+   }, [getCurrentProfile]);
 
     return loading && profile == null ? <Spinner /> : <Fragment> 
         <h1 className="large text-primary">Dashboard</h1>
@@ -22,9 +22,9 @@ const Dashboard = ({ deleteAccount, getCurrentProfile, auth:{ user }, profile: {
       {profile != null ? <Fragment> <DashboardActions/> 
       <Experience experience = {profile.experience}/> 
       <Education education = {profile.education}/> 
-      <div className='my-2'>
+      {/* <div className='my-2'>
           <button onClick = {() => deleteAccount()} className="btn btn-danger"><i className="fas fa-user-minus"></i>Delete My Account</button>
-      </div>
+      </div> */}
       </Fragment> : <Fragment> <p>You have not yet have set up a profile, please add some info</p>
       <Link to='/create-profile' className = "btn btn-primary my-1">Create Profile</Link> </Fragment>}
       <div className='my-2'>

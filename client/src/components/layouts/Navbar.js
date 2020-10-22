@@ -9,6 +9,17 @@ const Navbar = ({
 }) => {
   const authLinks = (
     <ul>
+       <li>
+          <Link to="/profiles">
+         Developers
+  
+          </Link>
+      </li> 
+      <li>
+          <Link to="/posts">
+         Posts
+          </Link>
+      </li> 
      <li>
           <Link to="/dashboard">
           <i className="fas fa-user"></i>{' '}
@@ -25,8 +36,10 @@ const Navbar = ({
   const guestLinks = (
     <ul>
         <li>
-          <a href="#!">Developers</a>
-        </li>
+          <Link to="/profiles">
+         Developers
+          </Link>
+      </li> 
         <li>
           <Link to="/register">Register</Link>
         </li>
