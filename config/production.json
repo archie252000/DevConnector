@@ -1,0 +1,7 @@
+{
+    "mongoURI": "mongodb+srv://archie123:archie112233@devconnector.7pqg6.mongodb.net/DATABASE?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "cbb7c71879b8b24df0e2",
+    "githubSecret": "dbbc4d3e73468917be85ab4825909acfcd102ff7"
+  }
+  
