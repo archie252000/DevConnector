@@ -32,3 +32,24 @@ npm install
 ```
 npm run dev
 ```
+
+# Here are some images of app in action
+### LANDING PAGE
+![alt text](AppImages/1.JPG)
+
+### SIGN UP PAGE
+![alt text](AppImages/2.JPG)
+
+### SIGN IN PAGE
+![alt text](AppImages/3.JPG)
+
+### DASHBOARD
+![alt text](AppImages/4.JPG)
+
+### PROFILE PAGE
+##### SECTION-1
+![alt text](AppImages/5.JPG)
+##### SECTION-2
+![alt text](AppImages/6.JPG)
+
+
